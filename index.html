@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jade Archive</title>
 
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f8f5f0;
+    font-family:Georgia, serif;
+    color:#333;
+}
+
+.container{
+    text-align:center;
+    max-width:700px;
+}
+
+h1{
+    font-size:56px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#777;
+    font-style:italic;
+    margin-bottom:60px;
+}
+
+input{
+    width:220px;
+    padding:14px;
+    font-size:18px;
+    text-align:center;
+    border:1px solid #bbb;
+    border-radius:10px;
+}
+
+button{
+    margin-left:10px;
+    padding:14px 24px;
+    border:none;
+    border-radius:10px;
+    background:#333;
+    color:white;
+    cursor:pointer;
+}
+
+.quote{
+    margin-top:80px;
+    color:#888;
+    font-style:italic;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Jade Archive</h1>
+
+<div class="subtitle">
+Every photo has a story.
+</div>
+
+<input id="number" placeholder="Enter postcard number">
+
+<button onclick="search()">
+Search
+</button>
+
+<div class="quote">
+"Some memories deserve more than a place in an album."
+</div>
+
+</div>
+
+<script>
+
+function search(){
+
+let num=document.getElementById("number").value;
+
+alert("未来这里会打开第 "+num+" 张照片的故事 ❤️");
+
+}
+
+</script>
+
+</body>
+
+</html>
