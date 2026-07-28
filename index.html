@@ -94,18 +94,15 @@ Search
 
 <script>
 
-function search(){
-    alert("hello");
+function search() {
 
-}
+    let num = document.getElementById("number").value.trim();
 
-    const num=document.getElementById("number").value.trim();
-
-    if(num===""){
+    if (num === "") {
         return;
     }
 
-    window.location.href="./stories/"+num+".html";
+    window.location.href = "stories/" + num + ".html";
 
 }
 
