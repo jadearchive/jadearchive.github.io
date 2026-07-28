@@ -89,14 +89,12 @@ Search
 
 function search(){
 
-let num=document.getElementById("number").value;
+    let num=document.getElementById("number").value.trim();
 
-alert("未来这里会打开第 "+num+" 张照片的故事 ❤️");
+    if(num===""){
+        return;
+    }
+
+    window.location.href="stories/"+num+".html";
 
 }
-
-</script>
-
-</body>
-
-</html>
