@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,8 +25,8 @@ body{
 }
 
 h1{
-    font-size:56px;
-    margin-bottom:10px;
+    font-size:64px;
+    margin-bottom:8px;
 }
 
 .subtitle{
@@ -35,7 +36,7 @@ h1{
 }
 
 input{
-    width:220px;
+    width:240px;
     padding:14px;
     font-size:18px;
     text-align:center;
@@ -51,6 +52,10 @@ button{
     background:#333;
     color:white;
     cursor:pointer;
+}
+
+button:hover{
+    background:#555;
 }
 
 .quote{
@@ -73,7 +78,9 @@ button{
 Every photo has a story.
 </div>
 
-<input id="number" placeholder="Enter postcard number">
+<input
+id="number"
+placeholder="Enter postcard number">
 
 <button onclick="search()">
 Search
@@ -89,12 +96,18 @@ Search
 
 function search(){
 
-    let num=document.getElementById("number").value.trim();
+    const num=document.getElementById("number").value.trim();
 
     if(num===""){
         return;
     }
 
-    window.location.href="stories/"+num+".html";
+    window.location.href="./stories/"+num+".html";
 
 }
+
+</script>
+
+</body>
+
+</html>
